@@ -2,7 +2,7 @@
 
 This repo provides code of training a machine learning model using [sklearn Pipeline](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.pipeline) and deploying the trained model using [Flask RestPlus](https://flask-restplus.readthedocs.io/en/stable/).
 
-Sklearn Pipeline is a useful tool for encapsulating multiple transformers together with an estimator into one object, so that important methods like `fit()` and `predict()` only needs to be called once. After the pipeline is trained we can pickle it and deploy it with a Web API, that way the model can be consumed for scoring without needing to re-train it everytime.
+Sklearn Pipeline is a useful tool for encapsulating multiple transformers together with an estimator into one object, so that important methods like `fit()` and `predict()` only needs to be called once. After the pipeline is trained we can pickle the object and add a Web API on top of it, that way the model can be consumed for scoring without needing to re-train it everytime.
 
 Flask RestPlus provides a Web API for others to consume the model for scoring, it also provides a Swagger UI for others to interact with the model.
 
