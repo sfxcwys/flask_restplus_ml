@@ -42,3 +42,5 @@ Forwarding                    http://b222b731.ngrok.io -> localhost:8000
 Forwarding                    https://b222b731.ngrok.io -> localhost:8000
 ```
 5. The part `http://b222b731.ngrok.io -> localhost:8000` means requests to `http://b222b731.ngrok.io` are now being forwarded by ngrok to `localhost:8000`, therefore your Swagger UI is now publicly available at `http://b222b731.ngrok.io`
+
+For more examples of using ngrok, please visit [this](https://www.twilio.com/blog/2016/12/localhost-tunneling-ngrok-mac-os-x.html) nice blog post.
